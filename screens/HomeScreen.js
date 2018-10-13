@@ -4,10 +4,17 @@ import {
   Text,
   ScrollView,
   StyleSheet,
-  TouchableOpacity
+  TouchableOpacity,
+  TouchableWithoutFeedback
 } from 'react-native';
 
-import { Modal, Dialog, Popup, Popover } from 'rn-ui'
+import { 
+  Modal, 
+  Dialog, 
+  Popup, 
+  Popover,
+  SlideUIAnimation
+} from 'rn-ui'
 
 class Button extends React.Component {
   render(){
@@ -64,6 +71,22 @@ export default class HomeScreen extends React.Component {
   }
 
   render() {
+    /**
+    return (
+      <View style={{backgroundColor: '#F6F6F6', flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <SlideUIAnimation 
+          duration={300} 
+          visible={true} 
+          minOpacity={1}
+          animateOnDidMount={true} 
+          translateOffset={36} 
+          translateDirection='left'>
+          <View style={{padding: 36, backgroundColor: 'red'}} />
+        </SlideUIAnimation>
+      </View>
+    )
+    **/
+
     return (
       <ScrollView
         style={styles.container}
