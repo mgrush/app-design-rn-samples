@@ -3,3 +3,5 @@
 .idea/
 .expo
 node_modules
+ios/demo.xcworkspace/xcshareddata/
+ios/demo.xcworkspace/xcuserdata/
