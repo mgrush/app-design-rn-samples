@@ -1,0 +1,36 @@
+{
+  "name": "app-design-rn-examples",
+  "version": "1.0.0",
+  "description": "为app-design-rn提供的可运行的Demo，方便展示组件执行效果",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgrush/app-design-rn-examples.git"
+  },
+  "dependencies": {
+    "@expo/samples": "2.1.1",
+    "expo": "^30.0.1",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-navigation": "^2.16.0"
+  },
+  "devDependencies": {
+    "jest-expo": "30.0.0"
+  },
+  "author": "programmer.mgrush@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgrush/app-design-rn-examples/issues"
+  },
+  "homepage": "https://github.com/mgrush/app-design-rn-examples#readme"
+}
