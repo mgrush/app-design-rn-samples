@@ -14,7 +14,7 @@ import {
   Popup, 
   Popover,
   SlideUIAnimation
-} from 'rn-ui'
+} from 'app-design-rn'
 
 class Button extends React.Component {
   render(){
