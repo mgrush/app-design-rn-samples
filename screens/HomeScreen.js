@@ -4,6 +4,8 @@ import {
   Text,
   ScrollView,
   StyleSheet,
+  NativeModules,
+  NativeEventEmitter,
   TouchableOpacity,
   TouchableWithoutFeedback
 } from 'react-native';
@@ -15,6 +17,21 @@ import {
   Popover,
   SlideUIAnimation
 } from 'app-design-rn'
+
+const CalendarManager = NativeModules.CalendarManager
+const calendarManagerEmitter = new NativeEventEmitter(CalendarManager)
+
+const subscription = calendarManagerEmitter.addListener(
+  'EventReminder',
+  (reminder) => console.log(reminder.name)
+);
+
+CalendarManager.addEvent('Birthday Party', {
+  location: "4 Privet Drive, Surrey",
+  time: new Date().getTime() 
+})
+
+CalendarManager.findEvents().then((abc) => console.warn(abc))
 
 class Button extends React.Component {
   render(){
